@@ -20,5 +20,9 @@ app.get('*', (req, res) => {
     res.render('error404')
 })
 
+router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
+
 // Listen for Connections
 app.listen(process.env.PORT)
